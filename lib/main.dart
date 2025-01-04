@@ -1,25 +1,19 @@
+import 'package:attendify/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:attendify/screens/login_screen.dart';
+import 'package:attendify/screens/home_screen.dart';
+
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: Scaffold(
-      body: LoginScreen(),
-    ),
-  ));
+    initialRoute: Attendify.id,
+    routes: {
+      Attendify.id:(context)=>Attendify(),
+      LoginScreen.id :(context)=>LoginScreen(),
+      RegisterScreen.id:(context)=>RegisterScreen(),
+    },
+  ),);
 }
 
-// class Attendify extends StatefulWidget {
-//   const Attendify({super.key});
-//
-//   @override
-//   State<Attendify> createState() => _AttendifyState();
-// }
-//
-// class _AttendifyState extends State<Attendify> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Placeholder();
-//   }
-// }
+

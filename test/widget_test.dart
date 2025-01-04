@@ -7,8 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:attendify/main.dart';
+import 'package:attendify/screens/home_screen.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
