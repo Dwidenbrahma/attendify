@@ -15,6 +15,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   font_awesome_flutter: ^10.8.0
   animated_text_kit: ^4.2.2
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -34,5 +35,7 @@ flutter:
   - family: Source-Sans
     fonts:
     - asset: assets/fonts/Source-Sans.ttf
-
+  - family: Robot
+    fonts:
+      - asset: assets/fonts/Roboto-Medium.ttf
 
