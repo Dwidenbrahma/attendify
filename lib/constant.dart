@@ -4,14 +4,15 @@ import 'package:flutter/material.dart';
 //   color: Color(),
 // );
 
-const colorizeColors = [
+const kColorizeColors = [
   Colors.purple,
   Colors.blue,
   Colors.yellow,
   Colors.red,
 ];
 
-const colorizeTextStyle = TextStyle(
+const kColorizeTextStyle = TextStyle(
   fontSize: 50.0,
-  fontFamily: 'Horizon',
+  fontFamily: 'Robot',
+  fontWeight: FontWeight.w900
 );

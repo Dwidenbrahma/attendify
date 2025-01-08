@@ -1,6 +1,6 @@
 import 'package:attendify/screens/register_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+//import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginScreen extends StatefulWidget {
   static const id = 'login_screen';
@@ -19,6 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(),
         body: SingleChildScrollView(
           // Wrap the entire body in SingleChildScrollView
           child: Column(
@@ -26,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Container(
                 margin: EdgeInsets.all(13.0),
                 decoration: BoxDecoration(
-                  color: Color(0xFFDA938B),
+                  color: Color(0xFFA9BFA8),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10.0), // Top-left corner rounded
                     topRight: Radius.circular(10.0),
@@ -66,9 +67,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         border: OutlineInputBorder(),
                         prefixIcon: Icon(
                           Icons.email_sharp,
-                          color: Colors.deepOrangeAccent,
+                          color: Color(0xFF3E7B27),
                         ),
                         hintText: 'Email',
+                        hoverColor: Color(0xFF3E7B27),
                         contentPadding: EdgeInsets.all(8.0), // Adjusts height
                       ),
                       style: TextStyle(
@@ -87,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         border: OutlineInputBorder(),
                         prefixIcon: Icon(
                           Icons.lock,
-                          color: Colors.deepOrangeAccent,
+                          color: Color(0xFF3E7B27),
                         ),
                         hintText: 'Password',
                         suffixIcon: IconButton(
@@ -113,11 +115,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       print('$password: $email');
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey,
+                      backgroundColor: Color(0xFF5E686D),
                       foregroundColor: Colors.white,
                       fixedSize: Size(328.0, 50.0),
                       textStyle: TextStyle(
-                          fontSize: 18.0, fontWeight: FontWeight.w900),
+                          fontSize: 18.0, fontWeight: FontWeight.w900,),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
                             7.0), // Adjust the radius here
