@@ -43,12 +43,12 @@ class _AttendifyState extends State<Attendify> {
           padding: EdgeInsets.all(50.0),
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/homepage.png'),
+              image: AssetImage('assets/images/kk.webp'),
               fit: BoxFit.cover,
             ),
           ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Column(
                 children: <Widget>[
@@ -67,7 +67,7 @@ class _AttendifyState extends State<Attendify> {
                             milliseconds: 100), // Set typing speed here
                       ),
                     ],
-                    repeatForever: true,
+
                     pause: Duration(
                         seconds: 2), // Pause duration between text animations
                   ),

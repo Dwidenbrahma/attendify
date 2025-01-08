@@ -22,28 +22,29 @@ class _RegisterScreenState extends State<RegisterScreen> {
         body: SingleChildScrollView(
           child: Container(
             padding: EdgeInsets.all(20.0),
-
             child: Column(
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.all(24.0),
+                  padding: EdgeInsets.all(26.0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15.0),
-                    color: Color(0xFF000000)
-                  ),
 
+                    image: DecorationImage(
+                      image: AssetImage(
+                          'assets/images/darkSky.webp'), // Path to your image
+                      fit: BoxFit
+                          .cover, // Adjust how the image fits the container
+                    ),
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
                         'Welcome Attendify',
                         style: TextStyle(
-                          fontSize: 34.0,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white
-
-                        ),
-
+                            fontSize: 34.0,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.white),
                       ),
                       Text(
                         'Your Gateway to smarter attendance management starts here !',
@@ -51,8 +52,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           fontSize: 18.0,
                           fontFamily: 'Robot',
                           color: Colors.white,
+                          letterSpacing: 1,
+                          fontStyle: FontStyle.italic,
                         ),
-
                       ),
                     ],
                   ),
