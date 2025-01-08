@@ -22,43 +22,43 @@ class _RegisterScreenState extends State<RegisterScreen> {
         body: SingleChildScrollView(
           child: Container(
             padding: EdgeInsets.all(20.0),
+
             child: Column(
               children: <Widget>[
-                SizedBox(
-                  child: AnimatedTextKit(
-                    animatedTexts: [
-                      ColorizeAnimatedText("Attendify",
-                          textStyle: kColorizeTextStyle,
-                          colors: kColorizeColors
+                Container(
+                  padding: EdgeInsets.all(24.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15.0),
+                    color: Color(0xFF000000)
+                  ),
+
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Welcome Attendify',
+                        style: TextStyle(
+                          fontSize: 34.0,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white
+
+                        ),
+
+                      ),
+                      Text(
+                        'Your Gateway to smarter attendance management starts here !',
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          fontFamily: 'Robot',
+                          color: Colors.white,
+                        ),
+
                       ),
                     ],
-                    isRepeatingAnimation: true,
-
-
                   ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(15.0),
-
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Color(0xFFE5D9F2),
-                  ),
-                  
-                  child: Text('Your Gateway to smarter attendance management starts here.', style: TextStyle(
-                    fontSize: 20.0,
-                    fontFamily: 'Sans',
-
-
-
-                  ),
-
-
-                  )
-
                 ),
                 SizedBox(
-                  height: 20.0,
+                  height: 30.0,
                 ),
                 Container(
                   padding: EdgeInsets.all(10.0),
