@@ -1,3 +1,4 @@
+import 'package:attendify/screens/attendify_home_screen.dart';
 import 'package:attendify/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:attendify/screens/login_screen.dart';
@@ -12,6 +13,7 @@ void main() {
       Attendify.id:(context)=>Attendify(),
       LoginScreen.id :(context)=>LoginScreen(),
       RegisterScreen.id:(context)=>RegisterScreen(),
+      AttendifyHomeScreen.id:(context)=>AttendifyHomeScreen(),
     },
   ),);
 }

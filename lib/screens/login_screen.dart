@@ -1,3 +1,4 @@
+import 'package:attendify/screens/attendify_home_screen.dart';
 import 'package:attendify/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 //import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -113,6 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ElevatedButton(
                     onPressed: () {
                       print('$password: $email');
+                      Navigator.pushNamed(context, AttendifyHomeScreen.id);
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color(0xFF5E686D),
