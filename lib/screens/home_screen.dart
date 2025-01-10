@@ -2,7 +2,6 @@ import 'package:attendify/screens/login_screen.dart';
 import 'package:attendify/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
 class Attendify extends StatefulWidget {
   static const id = 'home_screen';
@@ -50,32 +49,18 @@ class _AttendifyState extends State<Attendify> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Column(
-                children: <Widget>[
-                  AnimatedTextKit(
-                    animatedTexts: [
-                      TypewriterAnimatedText(
-                        '"${showQuote}"',
-                        textStyle: TextStyle(
-                          fontSize: 28.0,
-                          color: Color(0xFF3D3D3D),
-                          fontFamily: 'Pacifico',
-                          fontWeight: FontWeight.w900,
-                          fontStyle: FontStyle.italic,
-                        ),
-                        speed: Duration(
-                            milliseconds: 100), // Set typing speed here
-                      ),
-                    ],
-
-                    pause: Duration(
-                        seconds: 2), // Pause duration between text animations
-                  ),
-                ],
-              ),
+              Icon(Icons.access_alarm_rounded, size: 100.0, color: Colors.black87,),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
+                  Text(
+                    'Get start with',
+                    style: TextStyle(
+                      fontSize: 26.0,
+                      fontWeight: FontWeight.w500,
+                      fontFamily: 'Pacifico'
+                    ),
+                  ),
                   SizedBox(
                     child: Text(
                       'Attendify',
@@ -83,7 +68,7 @@ class _AttendifyState extends State<Attendify> {
                         fontSize: 50.0,
                         fontWeight: FontWeight.w900,
                         color: Color(0xFF000000),
-                        fontStyle: FontStyle.italic,
+
                       ),
                     ),
                   ),
@@ -104,13 +89,16 @@ class _AttendifyState extends State<Attendify> {
                               20.0), // Button border radius (rounded corners)
                         ),
                       ),
-                      child: Text(
-                        'Login',
-                        style: TextStyle(
-                          fontSize: 18.0,
-                          color: Colors.white,
-                          fontFamily: 'Robot',
-                        ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(Icons.login, color: Colors.white, size: 25.0,),
+                          SizedBox(width: 20.0,),
+                          Text('Login', style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18.0
+                          ),)
+                        ],
                       ),
                     ),
                   ),
@@ -132,11 +120,11 @@ class _AttendifyState extends State<Attendify> {
                         ),
                       ),
                       child: Text(
-                        'Sign Up',
+                        'Create Account',
                         style: TextStyle(
                           fontSize: 18.0,
                           color: Colors.white,
-                          fontFamily: 'Robot',
+                          fontFamily: 'Sans',
                         ),
                       ),
                     ),
